@@ -1,0 +1,33 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package taller_prog1;
+
+/**
+ *
+ * @author Laboratorio_RA
+ */
+public class Camion {
+    public String Marca;
+    public int Kilometraje;
+    public int Año;
+    public int Gasolina;
+    public boolean Nuevo;
+    
+    public void MostrarAño(){
+    System.out.println("El año de fabricacion del Camion es" + this.Año);
+    }
+    
+    public void EncenderAuto(){
+        if (Gasolina>=50){
+            System.out.println("El Camion partio");
+        }else{
+            System.out.println("El Camion no puede partir ya que faltan "+(50-this.Gasolina)+" litros");
+        }
+    }
+    
+    
+    
+}
